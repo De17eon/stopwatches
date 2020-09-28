@@ -18,8 +18,8 @@ export default {
 
 <style>
 @font-face {
-  font-family: Gotham Pro; /* Имя шрифта */
-  src: url(./assets/fonts/GothamPro.ttf); /* Путь к файлу со шрифтом */
+  font-family: Gotham Pro; 
+  src: url(./assets/fonts/GothamPro.ttf); 
 }
 * {
   margin: 0;
