@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <container />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import container from './components/container'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    container
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+  font-family: Gotham Pro; /* Имя шрифта */
+  src: url(./assets/fonts/GothamPro.ttf); /* Путь к файлу со шрифтом */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+button:hover {
+  cursor: pointer;
+}
+body {
+  background-color: #353638;
+}
+path { 
+  fill:inherit; 
+  stroke:inherit; 
 }
 </style>
